@@ -1,0 +1,26 @@
+.bathtub-container {
+  width: 30%;
+  padding: 16px;
+}
+
+.bathtub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.bathtub-inner {
+  height: 100px;
+  border: 1px solid black;
+  border-top: none;
+  position: relative;
+}
+
+.bathtub-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: cornflowerblue;
+}
