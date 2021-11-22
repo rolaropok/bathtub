@@ -1,6 +1,5 @@
-import { useCallback, useEffect, useState } from "react";
-
-import './Bathtub.css';
+import { useCallback, useEffect, useState } from "react"
+import './Bathtub.css'
 
 const MAX_WATER_LEVEL = 5
 const FILLING_DURATION = 2000
@@ -22,16 +21,16 @@ const Bathtub = () => {
         } else {
           setWaterLevel(waterLevel + 1)
         }
-        break;
+        break
       case TAB_STATUSES.DECREASING:
         if (waterLevel <= 0) {
           setTubStatus(TAB_STATUSES.STOPPED)
         } else {
           setWaterLevel(waterLevel - 1)
         }
-        break;
+        break
       default:
-        break;
+        break
     }
   }, [
     tubStatus,
@@ -75,4 +74,4 @@ const Bathtub = () => {
   )
 }
 
-export default Bathtub;
+export default Bathtub
